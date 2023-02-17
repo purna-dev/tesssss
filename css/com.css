@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
+@import url('https://css.gg/css');
+
+:root {
+    --primary-black: #091f31;
+    --primary-pink: #cc0099;
+    --primary-bagni: #993399;
+    --primary-yellow: #feda00;
+    --primary-green: #70b544;
+    --primary-white: #ffff;
+    --blue:#1e4897;
+    --orange:#f16826;
+    --red:#ea222d;
+    --chakra-font: 'Chakra Petch', sans-serif;
+    --size: 50px;
+    --frames: 62;
+    --bs-dark: #091f31;
+}
+.btn_play_sec{
+  margin-top: 1rem;
+}
+.btn_reg{
+     position: relative;
+  background: transparent;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--chakra-font);
+  /* margin-top: 3rem; */
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.02rem;
+  margin-top: 1rem;
+}
+.btn_reg:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: -5px;
+  background: var(--primary-pink);
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn_reg:hover:before {
+  transform: skewX(0deg);
+  left: 50%;
+  top: 0;
+}
+.btn_reg:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  left: 51%;
+  top: 5px;
+  background-color: var(--primary-bagni);
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn_reg:hover:after {
+  transform: skewX(0deg);
+  left: 0%;
+  top: 0;
+}
+#play_btn{
+  cursor: pointer;
+}
+.para{
+  padding: 0.2rem;
+  font-family: var(--chakra-font);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 700px;
+  z-index: 1000;
+}
+.jam{
+  /* display: flex; */
+ 
+}
+.jam_l div{
+  width: 40%;
+}
+.jam_l div svg{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 10000;
+  display: none;
+  /* position: absolute; */
+  /* width: 200px; */
+}
+.hed h3{
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+   border: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.02rem;
+}
+.hed h1{
+  opacity: 0.5;
+}
+/* .hed h1{
+  transform: rotate(-90deg);
+  position: absolute;
+   color: #fff;
+  border: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.02rem;
+  left: -4rem;
+  top: 0rem;
+  font-size:3rem ;
+} */
+.p_1{
+  font-size: 4rem;
+   opacity: 0.9;
+
+}
+.p_2{
+  
+  color: rgba(255, 255, 255, 0.8);
+}
+.p_1 span{
+  
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.02rem;
+}
+.dicss svg{
+  width: 220px;
+}
+.jam_r{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.play{
+  position: absolute;
+  padding: 2rem;
+}
+
+@media (max-width:600px) {
+  .para{
+  padding: 0.5rem;
+  font-family: var(--chakra-font);
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 400px;
+  z-index: 1000;
+  text-align: center;
+}
+
+  .p_1{
+    font-size: 1.5rem;
+  }
+  .p_2{
+    display:none;
+  }
+}
